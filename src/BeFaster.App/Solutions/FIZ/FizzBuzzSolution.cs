@@ -47,8 +47,8 @@ namespace BeFaster.App.Solutions.FIZ
                 }
                 else
                 {
-                    if (intThree) rtnValue = "fizz";
-                    if (intFive) rtnValue = "buzz";
+                    if (intThree) rtnValue = "deluxe";
+                    if (intFive) rtnValue = "deluxe";
                     if (sameVal) rtnValue = deluxeValue;
                     if (intThree && sameVal) rtnValue = "fizz " + deluxeValue;
                     if (intFive && sameVal) rtnValue = "buzz " + deluxeValue;
@@ -61,5 +61,6 @@ namespace BeFaster.App.Solutions.FIZ
         }
     }
 }
+
 
 
