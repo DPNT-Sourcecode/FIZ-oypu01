@@ -18,7 +18,7 @@ namespace BeFaster.App.Solutions.FIZ
                 {
                     if(intThree) rtnValue = "fizz";
                     if(intFive) rtnValue = "buzz";
-                    if (intThree && intFive) rtnValue = "fizz buzz";
+                    //if (intThree && intFive) rtnValue = "fizz buzz";
                 }
             }
 
@@ -26,6 +26,7 @@ namespace BeFaster.App.Solutions.FIZ
         }
     }
 }
+
 
 
 
