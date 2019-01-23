@@ -55,7 +55,7 @@ namespace BeFaster.App.Solutions.FIZ
                 {
                     if (intThree) rtnValue = "fizz";
                     if (intFive) rtnValue = "buzz";
-                    if (sameVal) rtnValue = deluxeValue;
+                    //if (sameVal) rtnValue = deluxeValue;
                     if(i.ToString().Contains("3"))
                     {
                         if (intThree && sameVal) rtnValue = "fizz " + deluxeValue;
@@ -71,5 +71,6 @@ namespace BeFaster.App.Solutions.FIZ
         }
     }
 }
+
 
 
