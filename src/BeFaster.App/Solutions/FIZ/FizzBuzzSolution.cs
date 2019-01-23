@@ -31,6 +31,15 @@ namespace BeFaster.App.Solutions.FIZ
                 }
 
                 //if (sameVal) rtnValue = "deluxe";
+
+                if(sameVal)
+                {
+                    if (i % 2 == 0)
+                        deluxeValue = "deluxe";
+                    else
+                        deluxeValue = "fake deluxe";
+                }
+
                 if (!intThree && !intFive)
                 {
                     if (!sameVal)
@@ -42,11 +51,11 @@ namespace BeFaster.App.Solutions.FIZ
                 {
                     if (intThree) rtnValue = "fizz";
                     if (intFive) rtnValue = "buzz";
-                    if (sameVal) rtnValue = "deluxe";
-                    if (intThree && sameVal) rtnValue = "fizz deluxe";
-                    if (intFive && sameVal) rtnValue = "buzz deluxe";
+                    if (sameVal) rtnValue = deluxeValue;
+                    if (intThree && sameVal) rtnValue = "fizz " + deluxeValue;
+                    if (intFive && sameVal) rtnValue = "buzz " + deluxeValue;
                     if (intThree && intFive) rtnValue = "fizz buzz";
-                    if (intThree && intFive && sameVal) rtnValue = "fizz buzz deluxe";
+                    if (intThree && intFive && sameVal) rtnValue = "fizz buzz " + deluxeValue;
                 }
             }
 
@@ -54,10 +63,3 @@ namespace BeFaster.App.Solutions.FIZ
         }
     }
 }
-
-
-
-
-
-
-
