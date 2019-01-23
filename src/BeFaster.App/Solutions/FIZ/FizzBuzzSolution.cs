@@ -30,14 +30,16 @@ namespace BeFaster.App.Solutions.FIZ
                 }
 
                 //if (sameVal) rtnValue = "deluxe";
-                if (!intThree && !intFive || !sameVal)
+                if (!intThree && !intFive && !sameVal)
+                {
                     rtnValue = i.ToString();
+                }
                 else
                 {
-                    if(intThree) rtnValue = "fizz";
-                    if(intFive) rtnValue = "buzz";
+                    if (intThree) rtnValue = "fizz";
+                    if (intFive) rtnValue = "buzz";
                     if (intThree && intFive) rtnValue = "fizz buzz";
-                    
+
                     if (intThree && intFive && sameVal) rtnValue = "fizz buzz deluxe";
                 }
             }
@@ -46,6 +48,7 @@ namespace BeFaster.App.Solutions.FIZ
         }
     }
 }
+
 
 
 
