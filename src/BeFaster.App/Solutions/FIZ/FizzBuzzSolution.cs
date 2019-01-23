@@ -15,6 +15,7 @@ namespace BeFaster.App.Solutions.FIZ
 
                 bool sameVal = false;
                 string numValue = number.ToString();
+                string deluxeValue = string.Empty;
                 for (int k = 0; k < numValue.Length; k++)
                 {
                     if (k >= 1)
@@ -53,6 +54,7 @@ namespace BeFaster.App.Solutions.FIZ
         }
     }
 }
+
 
 
 
