@@ -11,10 +11,20 @@ namespace BeFaster.App.Solutions.FIZ
             {
                 bool intThree = (i % 3 == 0 ? true : false);
                 bool intFive = (i % 5 == 0 ? true : false);
+
+                if (!intThree && !intFive)
+                    rtnValue = i.ToString();
+                else
+                {
+                    if(intThree) rtnValue = "fizz";
+                    if(intFive) rtnValue = "buzz";
+                    if (intThree && intFive) rtnValue = "fizz buzz";
+                }
             }
 
             return rtnValue;
         }
     }
 }
+
 
