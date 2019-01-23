@@ -34,9 +34,7 @@ namespace BeFaster.App.Solutions.FIZ
 
                 if(sameVal)
                 {
-                    if (i % 2 == 0)
-                        deluxeValue = "deluxe";
-                    else
+                    if (i % 2 != 0)
                         deluxeValue = "fake deluxe";
                 }
 
@@ -63,4 +61,5 @@ namespace BeFaster.App.Solutions.FIZ
         }
     }
 }
+
 
