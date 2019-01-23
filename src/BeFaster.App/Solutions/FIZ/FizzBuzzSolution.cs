@@ -12,6 +12,24 @@ namespace BeFaster.App.Solutions.FIZ
                 bool intThree = (i % 3 == 0 ? true : false) || (i.ToString().Contains("3") ? true : false);
                 bool intFive = (i % 5 == 0 ? true : false) || (i.ToString().Contains("5") ? true : false);
 
+
+                bool sameVal = false;
+                string numValue = number.ToString();
+                for (int k = 0; k < numValue.Length; k++)
+                {
+                    if (k >= 1)
+                    {
+                        if (numValue[k] == numValue[k - 1])
+                            sameVal = true;
+                        else
+                        {
+                            sameVal = false;
+                            break;
+                        }
+                    }
+                }
+
+
                 if (!intThree && !intFive)
                     rtnValue = i.ToString();
                 else
@@ -26,3 +44,4 @@ namespace BeFaster.App.Solutions.FIZ
         }
     }
 }
+
