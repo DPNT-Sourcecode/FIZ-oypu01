@@ -45,7 +45,7 @@ namespace BeFaster.App.Solutions.FIZ
                     if (!sameVal)
                         rtnValue = i.ToString();
                     else
-                        rtnValue = "deluxe";
+                        rtnValue = deluxeValue;
                 }
                 else
                 {
@@ -63,3 +63,4 @@ namespace BeFaster.App.Solutions.FIZ
         }
     }
 }
+
